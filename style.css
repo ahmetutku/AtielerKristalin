@@ -682,6 +682,209 @@ footer .copyright{
 }
 
 
+
+#pagination a:hover{
+    background-color: cadetblue;
+}
+
+#pagination li a:hover,
+#pagination li a.active{
+    background-color: cadetblue;
+}
+#pagination li a.active::after,
+#pagination li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: cadetblue;
+    position: absolute;
+    bottom:  -4px; /* negative margin on an element allows it to eat up the space of its parent container.*/
+    left: 20px;
+}
+/*Single Product*/
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-image-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-image-collumn{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details button{
+    background: #088178;
+    color: white
+}
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 30px;
+}
+
+/* about us*/
+#page-header.about-header{
+    background-image: url(images/banner/b13.jpg);
+    object-fit:cover;
+
+}
+#page-header.about-header h2, 
+#page-header.about-header p{
+    color: white;
+    text-shadow: 0 0 1px rgb(216, 77, 100);
+}
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+#about-head{
+    display: flex;
+    align-items:center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+#about-head div{
+    padding-left: 40px;
+}
+#about-head marquee{
+    color: purple;
+}
+/* contact us*/
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details{
+    width: 40%;
+}
+#contact-details .details span,
+#form-details form span{
+    font-size: 12px;
+}
+#contact-details .details h2,
+#form-details form h2{
+    font-size: 36px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+#contact-details .details p{
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+#form-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 20px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+#form-details form button{
+    background-color: #088178;
+    color: white;
+}
+#form-details .people div img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius:50%;
+}
+#form-details .people div{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#form-details .people div p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+#form-details .people div p  span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+
 /* media query*/
 @media (max-width: 799px){
     #navbar {
@@ -856,4 +1059,58 @@ footer .copyright{
         width: 100%;
     }
 
+<<<<<<< HEAD
+=======
+
+    /* Pagnation*/
+    #selected{
+        background-color: cadetblue;
+    }
+
+
+
+
+}
+
+/*Shop PAge*/
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: normal;
+}
+.cart-info img{
+    width:200px; /* you can use % */
+    height: auto;
+    border-radius: 20px;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #088178;
+    
+}
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #042725;
+    font-size: 12px;
+>>>>>>> f91dbe5 (added single product pages)
 }
